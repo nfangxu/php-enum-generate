@@ -1,0 +1,3644 @@
+{
+  "files": [
+    {
+      "name": "vendor/donews/proto-center/proto/keywords/keywords.proto",
+      "description": "",
+      "package": "keywords",
+      "hasEnums": true,
+      "hasExtensions": false,
+      "hasMessages": false,
+      "hasServices": false,
+      "enums": [
+        {
+          "name": "AdFromEnum",
+          "longName": "AdFromEnum",
+          "fullName": "keywords.AdFromEnum",
+          "description": "联盟类型",
+          "values": [
+            {
+              "name": "AD_FROM_ZHIKE",
+              "number": "0",
+              "description": "直客联盟"
+            },
+            {
+              "name": "AD_FROM_BAIDU",
+              "number": "1",
+              "description": "百度"
+            },
+            {
+              "name": "AD_FROM_GOOGLE",
+              "number": "2",
+              "description": "google"
+            },
+            {
+              "name": "AD_FROM_TOUTIAO",
+              "number": "3",
+              "description": "今日头条"
+            },
+            {
+              "name": "AD_FROM_INVENO",
+              "number": "4",
+              "description": "英威诺"
+            },
+            {
+              "name": "AD_FROM_GUANGDIANTONG",
+              "number": "5",
+              "description": "广点通"
+            },
+            {
+              "name": "AD_FROM_BAIDU_HYBRID",
+              "number": "6",
+              "description": "百度hybrid"
+            },
+            {
+              "name": "AD_FROM_KEDAXUNFEI",
+              "number": "7",
+              "description": "科大讯飞"
+            },
+            {
+              "name": "AD_FROM_INMOBI",
+              "number": "8",
+              "description": "inmobi"
+            },
+            {
+              "name": "AD_FROM_SOUGOU",
+              "number": "9",
+              "description": "搜狗"
+            },
+            {
+              "name": "AD_FROM_JIUXIN",
+              "number": "10",
+              "description": "久鑫"
+            },
+            {
+              "name": "AD_FROM_OPT_GUANGDIANTONG",
+              "number": "11",
+              "description": "OPT广点通"
+            },
+            {
+              "name": "AD_FROM_OPT_TOUTIAO",
+              "number": "12",
+              "description": "OPT头条"
+            },
+            {
+              "name": "AD_FROM_IDG",
+              "number": "13",
+              "description": "IDG"
+            },
+            {
+              "name": "AD_FROM_MEIBAI",
+              "number": "14",
+              "description": "美百"
+            },
+            {
+              "name": "AD_FROM_JINGDONG",
+              "number": "15",
+              "description": "京东"
+            },
+            {
+              "name": "AD_FROM_KUAISHOU",
+              "number": "16",
+              "description": "快手"
+            },
+            {
+              "name": "AD_FROM_OPT_KUAISHOU",
+              "number": "17",
+              "description": "OPT快手"
+            },
+            {
+              "name": "AD_FROM_SIGMOB",
+              "number": "18",
+              "description": "sigmob"
+            },
+            {
+              "name": "AD_FROM_MINTEGRAL",
+              "number": "19",
+              "description": "mintegral"
+            },
+            {
+              "name": "AD_FROM_XIAOMI",
+              "number": "20",
+              "description": "小米"
+            }
+          ]
+        },
+        {
+          "name": "AdGroupStatus",
+          "longName": "AdGroupStatus",
+          "fullName": "keywords.AdGroupStatus",
+          "description": "组状态",
+          "values": [
+            {
+              "name": "AD_GROUP_STATUS_STOP",
+              "number": "0",
+              "description": "已暂停"
+            },
+            {
+              "name": "AD_GROUP_STATUS_START",
+              "number": "1",
+              "description": "已启用"
+            },
+            {
+              "name": "AD_GROUP_STATUS_DELETE",
+              "number": "2",
+              "description": "已停止"
+            }
+          ]
+        },
+        {
+          "name": "AdStatusEnum",
+          "longName": "AdStatusEnum",
+          "fullName": "keywords.AdStatusEnum",
+          "description": "广告状态",
+          "values": [
+            {
+              "name": "AD_STATUS_NORMAL",
+              "number": "0",
+              "description": "已暂停"
+            },
+            {
+              "name": "AD_STATUS_OPEN",
+              "number": "1",
+              "description": "已开启"
+            },
+            {
+              "name": "AD_STATUS_STOP",
+              "number": "2",
+              "description": "已停止"
+            }
+          ]
+        },
+        {
+          "name": "Adaptation",
+          "longName": "Adaptation",
+          "fullName": "keywords.Adaptation",
+          "description": "",
+          "values": [
+            {
+              "name": "ADAPTATION_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "ADAPTATION_BETWEEN",
+              "number": "1",
+              "description": "居中"
+            },
+            {
+              "name": "ADAPTATION_ISOMETRIC_STRETCHED",
+              "number": "2",
+              "description": "等比拉伸"
+            },
+            {
+              "name": "ADAPTATION_DEFORMATION_STRETCHED",
+              "number": "3",
+              "description": "变形拉伸"
+            }
+          ]
+        },
+        {
+          "name": "AdvertPlace",
+          "longName": "AdvertPlace",
+          "fullName": "keywords.AdvertPlace",
+          "description": "",
+          "values": [
+            {
+              "name": "ADVERT_PLACE_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "ADVERT_PLACE_OPEN",
+              "number": "1",
+              "description": "开机全屏"
+            },
+            {
+              "name": "ADVERT_PLACE_CHANNEL_FEED_TYPE",
+              "number": "2",
+              "description": "频道信息流"
+            },
+            {
+              "name": "ADVERT_PLACE_CONTENT_FEED_TYPE",
+              "number": "3",
+              "description": "内文页信息流"
+            },
+            {
+              "name": "ADVERT_PLACE_CONTENT_BANNER",
+              "number": "4",
+              "description": "内文页banner"
+            },
+            {
+              "name": "ADVERT_PLACE_CONTENT_UNLOAD",
+              "number": "5",
+              "description": "退弹"
+            },
+            {
+              "name": "ADVERT_PLACE_VIDEO_FEED_TYPE",
+              "number": "6",
+              "description": "视频信息流"
+            },
+            {
+              "name": "ADVERT_PLACE_DETAIL",
+              "number": "7",
+              "description": "详情页"
+            }
+          ]
+        },
+        {
+          "name": "AgeEnum",
+          "longName": "AgeEnum",
+          "fullName": "keywords.AgeEnum",
+          "description": "年龄",
+          "values": [
+            {
+              "name": "AGE_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "AGE_ZERO_SEVENTEEN",
+              "number": "101001001",
+              "description": "0-17"
+            },
+            {
+              "name": "AGE_EIGHTEEN_TWENTY_FOUR",
+              "number": "101001002",
+              "description": "18-24"
+            },
+            {
+              "name": "AGE_TWENTY_FIVE_THIRTY_FOUR",
+              "number": "101001003",
+              "description": "25-34"
+            },
+            {
+              "name": "AGE_THIRTY_FIVE_FORTY_FOUR",
+              "number": "101001004",
+              "description": "35-44"
+            },
+            {
+              "name": "AGE_FORTY_FIVE_FIFTY_FOUR",
+              "number": "101001005",
+              "description": "45-54"
+            },
+            {
+              "name": "AGE_FIFTY_FIVE_ADD",
+              "number": "101001006",
+              "description": "55+"
+            }
+          ]
+        },
+        {
+          "name": "AllianceStrategyTypeEnum",
+          "longName": "AllianceStrategyTypeEnum",
+          "fullName": "keywords.AllianceStrategyTypeEnum",
+          "description": "联盟策略类型",
+          "values": [
+            {
+              "name": "ALLIANCE_STRATEGY_TYPE_RATIO",
+              "number": "0",
+              "description": "配比"
+            },
+            {
+              "name": "ALLIANCE_STRATEGY_TYPE_BIDDING",
+              "number": "1",
+              "description": "竞价"
+            },
+            {
+              "name": "ALLIANCE_STRATEGY_TYPE_ROTATION",
+              "number": "2",
+              "description": "轮换"
+            }
+          ]
+        },
+        {
+          "name": "AppInterestEnum",
+          "longName": "AppInterestEnum",
+          "fullName": "keywords.AppInterestEnum",
+          "description": "应用兴趣",
+          "values": [
+            {
+              "name": "INTEREST_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "INTEREST_YOUXI",
+              "number": "108001013",
+              "description": "游戏"
+            },
+            {
+              "name": "INTEREST_WANGZHUAN",
+              "number": "108001023",
+              "description": "网赚"
+            }
+          ]
+        },
+        {
+          "name": "AppsCategory",
+          "longName": "AppsCategory",
+          "fullName": "keywords.AppsCategory",
+          "description": "应用分类",
+          "values": [
+            {
+              "name": "APPS_CATEGORY_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "APPS_CATEGORY_SHEJIAO",
+              "number": "2",
+              "description": "社交"
+            },
+            {
+              "name": "APPS_CATEGORY_SHIPIN",
+              "number": "4",
+              "description": "视频"
+            },
+            {
+              "name": "APPS_CATEGORY_SHENGGUO",
+              "number": "6",
+              "description": "生活"
+            },
+            {
+              "name": "APPS_CATEGORY_XITONG",
+              "number": "8",
+              "description": "系统"
+            },
+            {
+              "name": "APPS_CATEGORY_SHEYING",
+              "number": "10",
+              "description": "摄影"
+            },
+            {
+              "name": "APPS_CATEGORY_LICAI",
+              "number": "12",
+              "description": "理财"
+            },
+            {
+              "name": "APPS_CATEGORY_XINWEN",
+              "number": "14",
+              "description": "新闻"
+            },
+            {
+              "name": "APPS_CATEGORY_BANGONG",
+              "number": "16",
+              "description": "办公"
+            },
+            {
+              "name": "APPS_CATEGORY_LVYOU",
+              "number": "18",
+              "description": "旅游"
+            },
+            {
+              "name": "APPS_CATEGORY_MEIHUA",
+              "number": "20",
+              "description": "美化"
+            },
+            {
+              "name": "APPS_CATEGORY_YOUXI",
+              "number": "22",
+              "description": "游戏"
+            },
+            {
+              "name": "APPS_CATEGORY_YINGYONG",
+              "number": "24",
+              "description": "应用"
+            },
+            {
+              "name": "APPS_CATEGORY_OTHER",
+              "number": "26",
+              "description": "其他"
+            }
+          ]
+        },
+        {
+          "name": "BlackWhiteEnum",
+          "longName": "BlackWhiteEnum",
+          "fullName": "keywords.BlackWhiteEnum",
+          "description": "黑白名单的类型",
+          "values": [
+            {
+              "name": "BLACK_WHITE_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "BLACK_WHITE_BLACK_IMEI",
+              "number": "1",
+              "description": "黑名单-IMEI"
+            },
+            {
+              "name": "BLACK_WHITE_BLACK_IDFA",
+              "number": "2",
+              "description": "黑名单-IDFA"
+            },
+            {
+              "name": "BLACK_WHITE_WHITE_IMEI",
+              "number": "3",
+              "description": "白名单-IMEI"
+            },
+            {
+              "name": "BLACK_WHITE_WHITE_IDFA",
+              "number": "4",
+              "description": "白名单-IDFA"
+            }
+          ]
+        },
+        {
+          "name": "CarEnum",
+          "longName": "CarEnum",
+          "fullName": "keywords.CarEnum",
+          "description": "有无车",
+          "values": [
+            {
+              "name": "CAR_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "CAR_YES",
+              "number": "102003001",
+              "description": "有车"
+            },
+            {
+              "name": "CAR_NO",
+              "number": "102003002",
+              "description": "无车"
+            }
+          ]
+        },
+        {
+          "name": "CareerEnum",
+          "longName": "CareerEnum",
+          "fullName": "keywords.CareerEnum",
+          "description": "学习、工作",
+          "values": [
+            {
+              "name": "CAREER_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "CAREER_STUDENT",
+              "number": "101005001",
+              "description": "在读学生"
+            },
+            {
+              "name": "CAREER_WHITE_COLLAR",
+              "number": "101005002",
+              "description": "企业白领"
+            },
+            {
+              "name": "CAREER_WHITE_FREELANCE",
+              "number": "101005003",
+              "description": "个体户/自由职业"
+            },
+            {
+              "name": "CAREER_WHITE_SERVICE",
+              "number": "101005004",
+              "description": "服务业人员"
+            },
+            {
+              "name": "CAREER_WHITE_GOV",
+              "number": "101005005",
+              "description": "政府及事业单位人员"
+            },
+            {
+              "name": "CAREER_WHITE_WORKMAN",
+              "number": "101005006",
+              "description": "工人"
+            },
+            {
+              "name": "CAREER_WHITE_DOCTOR",
+              "number": "101005007",
+              "description": "医生"
+            },
+            {
+              "name": "CAREER_WHITE_TEACHER",
+              "number": "101005008",
+              "description": "教师"
+            },
+            {
+              "name": "CAREER_WHITE_OTHER",
+              "number": "101005009",
+              "description": "其他"
+            }
+          ]
+        },
+        {
+          "name": "CarouselEnum",
+          "longName": "CarouselEnum",
+          "fullName": "keywords.CarouselEnum",
+          "description": "轮播",
+          "values": [
+            {
+              "name": "CAROUSEL_UNKNOWN",
+              "number": "0",
+              "description": "无"
+            },
+            {
+              "name": "CAROUSEL_QUARTER",
+              "number": "1",
+              "description": "1/4轮播"
+            },
+            {
+              "name": "CAROUSEL_HALF",
+              "number": "2",
+              "description": "1/2轮播"
+            },
+            {
+              "name": "CAROUSEL_THREE_QUARTERS",
+              "number": "3",
+              "description": "3/4轮播"
+            },
+            {
+              "name": "CAROUSEL_FULL",
+              "number": "4",
+              "description": "独占"
+            }
+          ]
+        },
+        {
+          "name": "ChannelEnum",
+          "longName": "ChannelEnum",
+          "fullName": "keywords.ChannelEnum",
+          "description": "频道",
+          "values": [
+            {
+              "name": "CHANNEL_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "CHANNEL_TUIJIAN",
+              "number": "1",
+              "description": "推荐"
+            },
+            {
+              "name": "CHANNEL_REDIAN",
+              "number": "2",
+              "description": "热点"
+            },
+            {
+              "name": "CHANNEL_SHIPIN",
+              "number": "3",
+              "description": "视频"
+            },
+            {
+              "name": "CHANNEL_SHEHUI",
+              "number": "4",
+              "description": "社会"
+            },
+            {
+              "name": "CHANNEL_YULE",
+              "number": "5",
+              "description": "娱乐"
+            },
+            {
+              "name": "CHANNEL_TUPIAN",
+              "number": "6",
+              "description": "图片"
+            },
+            {
+              "name": "CHANNEL_KEJI",
+              "number": "7",
+              "description": "科技"
+            },
+            {
+              "name": "CHANNEL_QICHE",
+              "number": "8",
+              "description": "汽车"
+            },
+            {
+              "name": "CHANNEL_TIYU",
+              "number": "9",
+              "description": "体育"
+            },
+            {
+              "name": "CHANNEL_CAIJING",
+              "number": "10",
+              "description": "财经"
+            },
+            {
+              "name": "CHANNEL_JUNSHI",
+              "number": "11",
+              "description": "军事"
+            },
+            {
+              "name": "CHANNEL_GUOJI",
+              "number": "12",
+              "description": "国际"
+            },
+            {
+              "name": "CHANNEL_JIANKANG",
+              "number": "14",
+              "description": "健康"
+            },
+            {
+              "name": "CHANNEL_FANGCHAN",
+              "number": "15",
+              "description": "房产"
+            },
+            {
+              "name": "CHANNEL_SHISHANG",
+              "number": "16",
+              "description": "时尚"
+            },
+            {
+              "name": "CHANNEL_YUER",
+              "number": "17",
+              "description": "育儿"
+            },
+            {
+              "name": "CHANNEL_GAOXIAO",
+              "number": "18",
+              "description": "搞笑"
+            },
+            {
+              "name": "CHANNEL_SHUMA",
+              "number": "19",
+              "description": "数码"
+            },
+            {
+              "name": "CHANNEL_MEISHI",
+              "number": "20",
+              "description": "美食"
+            },
+            {
+              "name": "CHANNEL_DIANYING",
+              "number": "21",
+              "description": "电影"
+            },
+            {
+              "name": "CHANNEL_LVYOU",
+              "number": "22",
+              "description": "旅游"
+            },
+            {
+              "name": "CHANNEL_CHONGWU",
+              "number": "23",
+              "description": "宠物"
+            },
+            {
+              "name": "CHANNEL_QINGGAN",
+              "number": "24",
+              "description": "情感"
+            },
+            {
+              "name": "CHANNEL_JIAOYU",
+              "number": "25",
+              "description": "教育"
+            },
+            {
+              "name": "CHANNEL_WENHUA",
+              "number": "26",
+              "description": "文化"
+            },
+            {
+              "name": "CHANNEL_YOUXI",
+              "number": "27",
+              "description": "游戏"
+            },
+            {
+              "name": "CHANNEL_MANHUA",
+              "number": "28",
+              "description": "漫画"
+            },
+            {
+              "name": "CHANNEL_XINGZUO",
+              "number": "29",
+              "description": "星座"
+            },
+            {
+              "name": "CHANNEL_DIFANG",
+              "number": "30",
+              "description": "地方"
+            }
+          ]
+        },
+        {
+          "name": "ChannelTypeEnum",
+          "longName": "ChannelTypeEnum",
+          "fullName": "keywords.ChannelTypeEnum",
+          "description": "",
+          "values": [
+            {
+              "name": "CHANNEL_TYPE_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "CHANNEL_TYPE_VEDIO_FEED_TYPE",
+              "number": "1",
+              "description": "视频信息流"
+            },
+            {
+              "name": "CHANNEL_TYPE_CHANNEL_FEED_TYPE",
+              "number": "2",
+              "description": "频道信息流"
+            },
+            {
+              "name": "CHANNEL_TYPE_DETAILS",
+              "number": "3",
+              "description": "详情页"
+            }
+          ]
+        },
+        {
+          "name": "ConversionMonitorTypeEnum",
+          "longName": "ConversionMonitorTypeEnum",
+          "fullName": "keywords.ConversionMonitorTypeEnum",
+          "description": "监测类型",
+          "values": [
+            {
+              "name": "CONVERSION_MONITOR_TYPE_UNKNOWN",
+              "number": "0",
+              "description": "无"
+            },
+            {
+              "name": "CONVERSION_MONITOR_TYPE_JS_MONITOR",
+              "number": "1",
+              "description": "JS 监测"
+            }
+          ]
+        },
+        {
+          "name": "CreateTypeEnum",
+          "longName": "CreateTypeEnum",
+          "fullName": "keywords.CreateTypeEnum",
+          "description": "素材类型",
+          "values": [
+            {
+              "name": "CREATE_TYPE_UNKNOWN",
+              "number": "0",
+              "description": "无"
+            },
+            {
+              "name": "CREATE_TYPE_IMAGE",
+              "number": "1",
+              "description": "图片"
+            },
+            {
+              "name": "CREATE_TYPE_VIDEO",
+              "number": "2",
+              "description": "视频"
+            },
+            {
+              "name": "CREATE_TYPE_MOTIVATIONAL_VIDEO",
+              "number": "3",
+              "description": "激励视频"
+            }
+          ]
+        },
+        {
+          "name": "CreativeStatus",
+          "longName": "CreativeStatus",
+          "fullName": "keywords.CreativeStatus",
+          "description": "创意状态",
+          "values": [
+            {
+              "name": "CREATIVE_STATUS_STOP",
+              "number": "0",
+              "description": "已暂停"
+            },
+            {
+              "name": "CREATIVE_STATUS_START",
+              "number": "1",
+              "description": "已启用"
+            },
+            {
+              "name": "CREATIVE_STATUS_DELETE",
+              "number": "2",
+              "description": "已停止"
+            }
+          ]
+        },
+        {
+          "name": "DeviceModelAndroidEnum",
+          "longName": "DeviceModelAndroidEnum",
+          "fullName": "keywords.DeviceModelAndroidEnum",
+          "description": "",
+          "values": [
+            {
+              "name": "DEVICE_MODEL_ANDROID_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "DEVICE_MODEL_ANDROID_HUAWEI",
+              "number": "2",
+              "description": "华为"
+            },
+            {
+              "name": "DEVICE_MODEL_ANDROID_XIOAMI",
+              "number": "3",
+              "description": "小米"
+            },
+            {
+              "name": "DEVICE_MODEL_ANDROID_SAMSUNG",
+              "number": "4",
+              "description": "三星"
+            },
+            {
+              "name": "DEVICE_MODEL_ANDROID_JINLI",
+              "number": "5",
+              "description": "金立"
+            },
+            {
+              "name": "DEVICE_MODEL_ANDROID_KUPAI",
+              "number": "6",
+              "description": "酷派"
+            },
+            {
+              "name": "DEVICE_MODEL_ANDROID_OPPO",
+              "number": "7",
+              "description": "OPPO"
+            },
+            {
+              "name": "DEVICE_MODEL_ANDROID_VIVO",
+              "number": "8",
+              "description": "VIVO"
+            },
+            {
+              "name": "DEVICE_MODEL_ANDROID_MEIZU",
+              "number": "9",
+              "description": "魅族"
+            },
+            {
+              "name": "DEVICE_MODEL_ANDROID_LENOVO",
+              "number": "10",
+              "description": "联想"
+            },
+            {
+              "name": "DEVICE_MODEL_ANDROID_LESHI",
+              "number": "11",
+              "description": "乐视"
+            },
+            {
+              "name": "DEVICE_MODEL_ANDROID_ZHONGXING",
+              "number": "12",
+              "description": "中兴"
+            },
+            {
+              "name": "DEVICE_MODEL_ANDROID_NOKIA",
+              "number": "13",
+              "description": "诺基亚"
+            },
+            {
+              "name": "DEVICE_MODEL_ANDROID_HTC",
+              "number": "14",
+              "description": "HTC"
+            },
+            {
+              "name": "DEVICE_MODEL_ANDROID_XIAOLAJIAO",
+              "number": "15",
+              "description": "小辣椒"
+            },
+            {
+              "name": "DEVICE_MODEL_ANDROID_NUBIYA",
+              "number": "16",
+              "description": "努比亚"
+            },
+            {
+              "name": "DEVICE_MODEL_ANDROID_HAXIN",
+              "number": "17",
+              "description": "海信"
+            },
+            {
+              "name": "DEVICE_MODEL_ANDROID_TCL",
+              "number": "18",
+              "description": "TCL"
+            },
+            {
+              "name": "DEVICE_MODEL_ANDROID_SONY",
+              "number": "19",
+              "description": "索尼"
+            },
+            {
+              "name": "DEVICE_MODEL_ANDROID_LG",
+              "number": "20",
+              "description": "LG"
+            },
+            {
+              "name": "DEVICE_MODEL_ANDROID_GOOGLE",
+              "number": "21",
+              "description": "google"
+            },
+            {
+              "name": "DEVICE_MODEL_ANDROID_DOOV",
+              "number": "22",
+              "description": "doov"
+            },
+            {
+              "name": "DEVICE_MODEL_ANDROID_LEFENG",
+              "number": "23",
+              "description": "乐丰"
+            },
+            {
+              "name": "DEVICE_MODEL_ANDROID_TANGGUO",
+              "number": "24",
+              "description": "糖果"
+            },
+            {
+              "name": "DEVICE_MODEL_ANDROID_YIJIA",
+              "number": "25",
+              "description": "一加"
+            },
+            {
+              "name": "DEVICE_MODEL_ANDROID_MOTUOLUOLA",
+              "number": "26",
+              "description": "摩托罗拉"
+            },
+            {
+              "name": "DEVICE_MODEL_ANDROID_CHUIZI",
+              "number": "27",
+              "description": "锤子"
+            },
+            {
+              "name": "DEVICE_MODEL_ANDROID_KUBI",
+              "number": "28",
+              "description": "酷比"
+            },
+            {
+              "name": "DEVICE_MODEL_ANDROID__360",
+              "number": "29",
+              "description": "360"
+            },
+            {
+              "name": "DEVICE_MODEL_ANDROID_GUOMEI",
+              "number": "30",
+              "description": "国美"
+            },
+            {
+              "name": "DEVICE_MODEL_ANDROID_MEITU",
+              "number": "31",
+              "description": "美图"
+            },
+            {
+              "name": "DEVICE_MODEL_ANDROID_CHANGHONG",
+              "number": "32",
+              "description": "长虹"
+            },
+            {
+              "name": "DEVICE_MODEL_ANDROID__8848",
+              "number": "33",
+              "description": "8848"
+            },
+            {
+              "name": "DEVICE_MODEL_ANDROID_GREE",
+              "number": "34",
+              "description": "gree"
+            },
+            {
+              "name": "DEVICE_MODEL_ANDROID_OUJIA",
+              "number": "35",
+              "description": "欧加"
+            },
+            {
+              "name": "DEVICE_MODEL_ANDROID_KANGJIA",
+              "number": "36",
+              "description": "康佳"
+            }
+          ]
+        },
+        {
+          "name": "DeviceModelEnum",
+          "longName": "DeviceModelEnum",
+          "fullName": "keywords.DeviceModelEnum",
+          "description": "设备定向型号",
+          "values": [
+            {
+              "name": "DEVICE_MODEL_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "DEVICE_MODEL_IOS",
+              "number": "1",
+              "description": "IOS"
+            },
+            {
+              "name": "DEVICE_MODEL_HUAWEI",
+              "number": "2",
+              "description": "华为"
+            },
+            {
+              "name": "DEVICE_MODEL_XIOAMI",
+              "number": "3",
+              "description": "小米"
+            },
+            {
+              "name": "DEVICE_MODEL_SAMSUNG",
+              "number": "4",
+              "description": "三星"
+            },
+            {
+              "name": "DEVICE_MODEL_JINLI",
+              "number": "5",
+              "description": "金立"
+            },
+            {
+              "name": "DEVICE_MODEL_KUPAI",
+              "number": "6",
+              "description": "酷派"
+            },
+            {
+              "name": "DEVICE_MODEL_OPPO",
+              "number": "7",
+              "description": "OPPO"
+            },
+            {
+              "name": "DEVICE_MODEL_VIVO",
+              "number": "8",
+              "description": "VIVO"
+            },
+            {
+              "name": "DEVICE_MODEL_MEIZU",
+              "number": "9",
+              "description": "魅族"
+            },
+            {
+              "name": "DEVICE_MODEL_LENOVO",
+              "number": "10",
+              "description": "联想"
+            },
+            {
+              "name": "DEVICE_MODEL_LESHI",
+              "number": "11",
+              "description": "乐视"
+            },
+            {
+              "name": "DEVICE_MODEL_ZHONGXING",
+              "number": "12",
+              "description": "中兴"
+            },
+            {
+              "name": "DEVICE_MODEL_NOKIA",
+              "number": "13",
+              "description": "诺基亚"
+            },
+            {
+              "name": "DEVICE_MODEL_HTC",
+              "number": "14",
+              "description": "HTC"
+            },
+            {
+              "name": "DEVICE_MODEL_XIAOLAJIAO",
+              "number": "15",
+              "description": "小辣椒"
+            },
+            {
+              "name": "DEVICE_MODEL_NUBIYA",
+              "number": "16",
+              "description": "努比亚"
+            },
+            {
+              "name": "DEVICE_MODEL_HAXIN",
+              "number": "17",
+              "description": "海信"
+            },
+            {
+              "name": "DEVICE_MODEL_TCL",
+              "number": "18",
+              "description": "TCL"
+            },
+            {
+              "name": "DEVICE_MODEL_SONY",
+              "number": "19",
+              "description": "索尼"
+            },
+            {
+              "name": "DEVICE_MODEL_LG",
+              "number": "20",
+              "description": "LG"
+            },
+            {
+              "name": "DEVICE_MODEL_GOOGLE",
+              "number": "21",
+              "description": "google"
+            },
+            {
+              "name": "DEVICE_MODEL_DOOV",
+              "number": "22",
+              "description": "doov"
+            },
+            {
+              "name": "DEVICE_MODEL_LEFENG",
+              "number": "23",
+              "description": "乐丰"
+            },
+            {
+              "name": "DEVICE_MODEL_TANGGUO",
+              "number": "24",
+              "description": "糖果"
+            },
+            {
+              "name": "DEVICE_MODEL_YIJIA",
+              "number": "25",
+              "description": "一加"
+            },
+            {
+              "name": "DEVICE_MODEL_MOTUOLUOLA",
+              "number": "26",
+              "description": "摩托罗拉"
+            },
+            {
+              "name": "DEVICE_MODEL_CHUIZI",
+              "number": "27",
+              "description": "锤子"
+            },
+            {
+              "name": "DEVICE_MODEL_KUBI",
+              "number": "28",
+              "description": "酷比"
+            },
+            {
+              "name": "DEVICE_MODEL__360",
+              "number": "29",
+              "description": "360"
+            },
+            {
+              "name": "DEVICE_MODEL_GUOMEI",
+              "number": "30",
+              "description": "国美"
+            },
+            {
+              "name": "DEVICE_MODEL_MEITU",
+              "number": "31",
+              "description": "美图"
+            },
+            {
+              "name": "DEVICE_MODEL_CHANGHONG",
+              "number": "32",
+              "description": "长虹"
+            },
+            {
+              "name": "DEVICE_MODEL__8848",
+              "number": "33",
+              "description": "8848"
+            },
+            {
+              "name": "DEVICE_MODEL_GREE",
+              "number": "34",
+              "description": "gree"
+            },
+            {
+              "name": "DEVICE_MODEL_OUJIA",
+              "number": "35",
+              "description": "欧加"
+            },
+            {
+              "name": "DEVICE_MODEL_KANGJIA",
+              "number": "36",
+              "description": "康佳"
+            }
+          ]
+        },
+        {
+          "name": "DeviceModelIosEnum",
+          "longName": "DeviceModelIosEnum",
+          "fullName": "keywords.DeviceModelIosEnum",
+          "description": "设备定向的Ios",
+          "values": [
+            {
+              "name": "DEVICE_MODEL_IOS_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "DEVICE_MODEL_IOS_IOS",
+              "number": "1",
+              "description": "IOS"
+            }
+          ]
+        },
+        {
+          "name": "DirectTemplateIdEnum",
+          "longName": "DirectTemplateIdEnum",
+          "fullName": "keywords.DirectTemplateIdEnum",
+          "description": "模版样式id",
+          "values": [
+            {
+              "name": "DIRECT_TEMPLATE_ID_UNKNOWN",
+              "number": "0",
+              "description": "无"
+            },
+            {
+              "name": "DIRECT_TEMPLATE_ID_FEED_TYPE_ICON",
+              "number": "1",
+              "description": "信息流小图"
+            },
+            {
+              "name": "DIRECT_TEMPLATE_ID_FEED_TYPE_GROUP",
+              "number": "2",
+              "description": "信息流组图"
+            },
+            {
+              "name": "DIRECT_TEMPLATE_ID_FEED_TYPE_BIG",
+              "number": "3",
+              "description": "信息流大图"
+            },
+            {
+              "name": "DIRECT_TEMPLATE_ID_ENCOURAGE_VIDEO",
+              "number": "4",
+              "description": "激励视频（封面+icon）"
+            },
+            {
+              "name": "DIRECT_TEMPLATE_ID_BANNER_ICON",
+              "number": "5",
+              "description": "banner（icon+标题+推广名称）"
+            },
+            {
+              "name": "DIRECT_TEMPLATE_ID_BANNER",
+              "number": "6",
+              "description": "banner（单张图片）"
+            },
+            {
+              "name": "DIRECT_TEMPLATE_ID_OPEN_SCREEN",
+              "number": "7",
+              "description": "开屏（单张图片）"
+            },
+            {
+              "name": "DIRECT_TEMPLATE_ID_OPEN_SCREEN_ICON",
+              "number": "8",
+              "description": "开屏icon"
+            },
+            {
+              "name": "DIRECT_TEMPLATE_ID_PLAQUE",
+              "number": "9",
+              "description": "插屏"
+            },
+            {
+              "name": "DIRECT_TEMPLATE_ID_EMBED",
+              "number": "10",
+              "description": "嵌入"
+            },
+            {
+              "name": "DIRECT_TEMPLATE_ID_INSERT_PAGE",
+              "number": "11",
+              "description": "插页"
+            },
+            {
+              "name": "DIRECT_TEMPLATE_ID_OPEN_SCREEN_VIDEO",
+              "number": "12",
+              "description": "开屏视频"
+            },
+            {
+              "name": "DIRECT_TEMPLATE_ID_DRAW",
+              "number": "13",
+              "description": "Draw流"
+            },
+            {
+              "name": "DIRECT_TEMPLATE_ID_FEED_TYPE_BIG_VIDEO",
+              "number": "14",
+              "description": "信息流大图视频"
+            }
+          ]
+        },
+        {
+          "name": "DistributionEnum",
+          "longName": "DistributionEnum",
+          "fullName": "keywords.DistributionEnum",
+          "description": "",
+          "values": [
+            {
+              "name": "DISTRIBUTION_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "DISTRIBUTION_EVEN",
+              "number": "1",
+              "description": "均匀投放"
+            },
+            {
+              "name": "DISTRIBUTION_UNEVEN",
+              "number": "2",
+              "description": "非均匀投放"
+            }
+          ]
+        },
+        {
+          "name": "EducationEnum",
+          "longName": "EducationEnum",
+          "fullName": "keywords.EducationEnum",
+          "description": "教育",
+          "values": [
+            {
+              "name": "EDUCATION_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "EDUCATION_SENIOR_HIGH",
+              "number": "101004001",
+              "description": "高中及以下"
+            },
+            {
+              "name": "EDUCATION_COLLEGE_DEGREE",
+              "number": "101004002",
+              "description": "专科"
+            },
+            {
+              "name": "EDUCATION_UNIVERSITY_DEGREE",
+              "number": "101004003",
+              "description": "本科"
+            },
+            {
+              "name": "EDUCATION_MASTER_DEGREE",
+              "number": "101004004",
+              "description": "硕士及以上"
+            }
+          ]
+        },
+        {
+          "name": "FeedTypeEnum",
+          "longName": "FeedTypeEnum",
+          "fullName": "keywords.FeedTypeEnum",
+          "description": "信息流展示样式",
+          "values": [
+            {
+              "name": "FEED_TYPE_UNKNOWN",
+              "number": "0",
+              "description": "无"
+            },
+            {
+              "name": "FEED_TYPE_SMALL",
+              "number": "1",
+              "description": "小图"
+            },
+            {
+              "name": "FEED_TYPE_GROUP",
+              "number": "2",
+              "description": "组图"
+            },
+            {
+              "name": "FEED_TYPE_BIG",
+              "number": "3",
+              "description": "大图"
+            }
+          ]
+        },
+        {
+          "name": "FinanceExamineStatusEnum",
+          "longName": "FinanceExamineStatusEnum",
+          "fullName": "keywords.FinanceExamineStatusEnum",
+          "description": "财务审核状态",
+          "values": [
+            {
+              "name": "FINANCE_EXAMINE_STATUS_UNKNOWN",
+              "number": "0",
+              "description": ""
+            },
+            {
+              "name": "FINANCE_EXAMINE_STATUS_PASS",
+              "number": "1",
+              "description": "通过"
+            },
+            {
+              "name": "FINANCE_EXAMINE_STATUS_REFUSE",
+              "number": "2",
+              "description": "拒绝"
+            }
+          ]
+        },
+        {
+          "name": "FlowSource",
+          "longName": "FlowSource",
+          "fullName": "keywords.FlowSource",
+          "description": "",
+          "values": [
+            {
+              "name": "FLOW_SOURCE_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "FLOW_SOURCE_YINLI",
+              "number": "1",
+              "description": "引力资讯"
+            },
+            {
+              "name": "FLOW_SOURCE_LIANMENG",
+              "number": "2",
+              "description": "联盟渠道"
+            },
+            {
+              "name": "FLOW_SOURCE_XIAOGUO",
+              "number": "3",
+              "description": "效果渠道"
+            },
+            {
+              "name": "FLOW_SOURCE_WAP",
+              "number": "4",
+              "description": "wap"
+            },
+            {
+              "name": "FLOW_SOURCE_DUONIU",
+              "number": "6",
+              "description": "多牛媒体"
+            }
+          ]
+        },
+        {
+          "name": "FlowTypeEnum",
+          "longName": "FlowTypeEnum",
+          "fullName": "keywords.FlowTypeEnum",
+          "description": "流量类型",
+          "values": [
+            {
+              "name": "FLOW_TYPE_UNKNOWN",
+              "number": "0",
+              "description": "默认"
+            },
+            {
+              "name": "FLOW_TYPE_APP",
+              "number": "1",
+              "description": "app"
+            },
+            {
+              "name": "FLOW_TYPE_PC",
+              "number": "2",
+              "description": "pc"
+            },
+            {
+              "name": "FLOW_TYPE_WAP",
+              "number": "3",
+              "description": "wap"
+            }
+          ]
+        },
+        {
+          "name": "HasDownloadTipsEnum",
+          "longName": "HasDownloadTipsEnum",
+          "fullName": "keywords.HasDownloadTipsEnum",
+          "description": "是否有下载提示 // 2020-7-7",
+          "values": [
+            {
+              "name": "HAS_DOWNLOAD_TIPS_NO",
+              "number": "0",
+              "description": "没有"
+            },
+            {
+              "name": "HAS_DOWNLOAD_TIPS_YES",
+              "number": "1",
+              "description": "有"
+            }
+          ]
+        },
+        {
+          "name": "HobbyEnum",
+          "longName": "HobbyEnum",
+          "fullName": "keywords.HobbyEnum",
+          "description": "兴趣爱好",
+          "values": [
+            {
+              "name": "HOBBY_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "HOBBY_YOUXI",
+              "number": "103001",
+              "description": "游戏"
+            },
+            {
+              "name": "HOBBY_JIAOYU",
+              "number": "103002",
+              "description": "教育培训"
+            },
+            {
+              "name": "HOBBY_LVYOU",
+              "number": "103003",
+              "description": "旅游出行"
+            },
+            {
+              "name": "HOBBY_QICHE",
+              "number": "103004",
+              "description": "汽车"
+            },
+            {
+              "name": "HOBBY_SHEJIAO",
+              "number": "103005",
+              "description": "社交"
+            },
+            {
+              "name": "HOBBY_SHENGHUO",
+              "number": "103006",
+              "description": "生活服务"
+            },
+            {
+              "name": "HOBBY_YUNDONG",
+              "number": "103007",
+              "description": "运动"
+            },
+            {
+              "name": "HOBBY_YANGSHENG",
+              "number": "103008",
+              "description": "健康养生"
+            },
+            {
+              "name": "HOBBY_JIAJU",
+              "number": "103009",
+              "description": "家居家装"
+            },
+            {
+              "name": "HOBBY_KEJI",
+              "number": "103010",
+              "description": "科技数码"
+            },
+            {
+              "name": "HOBBY_MUYING",
+              "number": "103011",
+              "description": "母婴"
+            },
+            {
+              "name": "HOBBY_MEIZHUANG",
+              "number": "103012",
+              "description": "美妆个护"
+            },
+            {
+              "name": "HOBBY_LICAI",
+              "number": "103013",
+              "description": "金融理财"
+            },
+            {
+              "name": "HOBBY_DIANSHANG",
+              "number": "103015",
+              "description": "电商"
+            },
+            {
+              "name": "HOBBY_MEISHI",
+              "number": "103016",
+              "description": "美食"
+            },
+            {
+              "name": "HOBBY_CHONGWU",
+              "number": "103017",
+              "description": "宠物"
+            },
+            {
+              "name": "HOBBY_ZHICHANG",
+              "number": "103018",
+              "description": "职场"
+            },
+            {
+              "name": "HOBBY_QINGGAN",
+              "number": "103019",
+              "description": "情感"
+            },
+            {
+              "name": "HOBBY_WENHUA",
+              "number": "103020",
+              "description": "文化"
+            },
+            {
+              "name": "HOBBY_SHOUCANG",
+              "number": "103021",
+              "description": "收藏"
+            },
+            {
+              "name": "HOBBY_NONGLIN",
+              "number": "103022",
+              "description": "农林渔牧"
+            },
+            {
+              "name": "HOBBY_LISHI",
+              "number": "103023",
+              "description": "历史"
+            },
+            {
+              "name": "HOBBY_XINGZUO",
+              "number": "103024",
+              "description": "星座"
+            },
+            {
+              "name": "HOBBY_GUOJI",
+              "number": "103025",
+              "description": "国际"
+            },
+            {
+              "name": "HOBBY_XINLI",
+              "number": "103026",
+              "description": "心理"
+            },
+            {
+              "name": "HOBBY_JUNSHI",
+              "number": "103027",
+              "description": "军事"
+            },
+            {
+              "name": "HOBBY_XINWEN",
+              "number": "103028",
+              "description": "新闻资讯"
+            },
+            {
+              "name": "HOBBY_SHIZHENG",
+              "number": "103029",
+              "description": "时政"
+            },
+            {
+              "name": "HOBBY_YULE",
+              "number": "103030",
+              "description": "娱乐"
+            },
+            {
+              "name": "HOBBY_SHEJI",
+              "number": "103031",
+              "description": "设计"
+            },
+            {
+              "name": "HOBBY_YINGSHI",
+              "number": "103032",
+              "description": "影视"
+            },
+            {
+              "name": "HOBBY_GAOXIAO",
+              "number": "103033",
+              "description": "搞笑"
+            },
+            {
+              "name": "HOBBY_SHEHUI",
+              "number": "103034",
+              "description": "社会"
+            },
+            {
+              "name": "HOBBY_DONGMAN",
+              "number": "103035",
+              "description": "动漫"
+            },
+            {
+              "name": "HOBBY_FANGCHAN",
+              "number": "103036",
+              "description": "房产"
+            },
+            {
+              "name": "HOBBY_SHISANG",
+              "number": "103037",
+              "description": "时尚"
+            }
+          ]
+        },
+        {
+          "name": "HouseEnum",
+          "longName": "HouseEnum",
+          "fullName": "keywords.HouseEnum",
+          "description": "有无房产",
+          "values": [
+            {
+              "name": "HOUSE_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "HOUSE_ROOM",
+              "number": "102002001",
+              "description": "有房"
+            },
+            {
+              "name": "HOUSE_NO_ROOM",
+              "number": "102002002",
+              "description": "无房"
+            }
+          ]
+        },
+        {
+          "name": "IdTag",
+          "longName": "IdTag",
+          "fullName": "keywords.IdTag",
+          "description": "",
+          "values": [
+            {
+              "name": "ID_TAG_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "ID_TAG_KA",
+              "number": "1",
+              "description": "KA广告主"
+            },
+            {
+              "name": "ID_TAG_AD_USER",
+              "number": "2",
+              "description": "广告主"
+            },
+            {
+              "name": "ID_TAG_AD_AGENCY",
+              "number": "4",
+              "description": "代理商"
+            },
+            {
+              "name": "ID_TAG_AD_NO_RTB",
+              "number": "6",
+              "description": "非竞价直客"
+            },
+            {
+              "name": "ID_TAG_AD_FINANCE",
+              "number": "7",
+              "description": "财务/商务"
+            }
+          ]
+        },
+        {
+          "name": "IncomeEnum",
+          "longName": "IncomeEnum",
+          "fullName": "keywords.IncomeEnum",
+          "description": "薪资",
+          "values": [
+            {
+              "name": "INCOME_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "INCOME_ONE_THOUSAND",
+              "number": "101006001",
+              "description": "\u003c1K"
+            },
+            {
+              "name": "INCOME_TWO_THOUSAND",
+              "number": "101006002",
+              "description": "1-2K"
+            },
+            {
+              "name": "INCOME_THREE_THOUSAND",
+              "number": "101006003",
+              "description": "2-3K"
+            },
+            {
+              "name": "INCOME_FIVE_THOUSAND",
+              "number": "101006004",
+              "description": "3-5K"
+            },
+            {
+              "name": "INCOME_EIGHT_THOUSAND",
+              "number": "101006005",
+              "description": "5-8K"
+            },
+            {
+              "name": "INCOME_TWELVE_THOUSAND",
+              "number": "101006006",
+              "description": "8-12k"
+            },
+            {
+              "name": "INCOME_TWELVE_THOUSAND_ADD",
+              "number": "101006007",
+              "description": "12k+"
+            }
+          ]
+        },
+        {
+          "name": "IncreaseTypeEnum",
+          "longName": "IncreaseTypeEnum",
+          "fullName": "keywords.IncreaseTypeEnum",
+          "description": "财务充值类型",
+          "values": [
+            {
+              "name": "INCREASE_TYPE_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "INCREASE_TYPE_CASH",
+              "number": "1",
+              "description": "加款现金金额"
+            },
+            {
+              "name": "INCREASE_TYPE_RETURN_GOOD",
+              "number": "2",
+              "description": "加款返货金额"
+            }
+          ]
+        },
+        {
+          "name": "Industry",
+          "longName": "Industry",
+          "fullName": "keywords.Industry",
+          "description": "分类",
+          "values": [
+            {
+              "name": "INDUSTRY_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "INDUSTRY_ANQUAN",
+              "number": "1",
+              "description": "安全安保"
+            },
+            {
+              "name": "INDUSTRY_BANGONG",
+              "number": "2",
+              "description": "办公文教"
+            },
+            {
+              "name": "INDUSTRY_CAIPIAO",
+              "number": "3",
+              "description": "彩票"
+            },
+            {
+              "name": "INDUSTRY_WULIU",
+              "number": "4",
+              "description": "车辆物流"
+            },
+            {
+              "name": "INDUSTRY_CHENGREN",
+              "number": "5",
+              "description": "成人用品"
+            },
+            {
+              "name": "INDUSTRY_CHUANMEI",
+              "number": "6",
+              "description": "出版传媒"
+            },
+            {
+              "name": "INDUSTRY_YINGJIAN",
+              "number": "7",
+              "description": "电脑硬件"
+            },
+            {
+              "name": "INDUSTRY_DIANGONG",
+              "number": "8",
+              "description": "电子电工"
+            },
+            {
+              "name": "INDUSTRY_FANGDICHAN",
+              "number": "9",
+              "description": "房地产建筑装修"
+            },
+            {
+              "name": "INDUSTRY_PINGTAI",
+              "number": "10",
+              "description": "分类平台"
+            },
+            {
+              "name": "INDUSTRY_FUSHI",
+              "number": "11",
+              "description": "服装鞋帽"
+            },
+            {
+              "name": "INDUSTRY_XIANGBAO",
+              "number": "12",
+              "description": "箱包饰品"
+            },
+            {
+              "name": "INDUSTRY_HUAGONG",
+              "number": "13",
+              "description": "化工原料制品"
+            },
+            {
+              "name": "INDUSTRY_JIXIE",
+              "number": "14",
+              "description": "机械设备"
+            },
+            {
+              "name": "INDUSTRY_RIYONG",
+              "number": "15",
+              "description": "家庭日用品"
+            },
+            {
+              "name": "INDUSTRY_DIANQI",
+              "number": "16",
+              "description": "家用电器"
+            },
+            {
+              "name": "INDUSTRY_JIAOYU",
+              "number": "17",
+              "description": "教育培训"
+            },
+            {
+              "name": "INDUSTRY_JIENENG",
+              "number": "18",
+              "description": "节能环保"
+            },
+            {
+              "name": "INDUSTRY_JINRONG",
+              "number": "19",
+              "description": "金融服务"
+            },
+            {
+              "name": "INDUSTRY_LIPIN",
+              "number": "20",
+              "description": "礼品"
+            },
+            {
+              "name": "INDUSTRY_LVYOU",
+              "number": "21",
+              "description": "旅游住宿"
+            },
+            {
+              "name": "INDUSTRY_MEIRONG",
+              "number": "22",
+              "description": "美容化妆"
+            },
+            {
+              "name": "INDUSTRY_MUYING",
+              "number": "24",
+              "description": "母婴护理"
+            },
+            {
+              "name": "INDUSTRY_NONGLIN",
+              "number": "25",
+              "description": "农林牧渔"
+            },
+            {
+              "name": "INDUSTRY_RUANJIAN",
+              "number": "26",
+              "description": "软件"
+            },
+            {
+              "name": "INDUSTRY_SHANGWU",
+              "number": "27",
+              "description": "商务服务"
+            },
+            {
+              "name": "INDUSTRY_SHENGHUO",
+              "number": "28",
+              "description": "生活服务"
+            },
+            {
+              "name": "INDUSTRY_BAOJIAN",
+              "number": "29",
+              "description": "食品保健品"
+            },
+            {
+              "name": "INDUSTRY_SHUMA",
+              "number": "30",
+              "description": "手机数码"
+            },
+            {
+              "name": "INDUSTRY_TONGXUN",
+              "number": "31",
+              "description": "通讯服务设备"
+            },
+            {
+              "name": "INDUSTRY_WANGLUO",
+              "number": "32",
+              "description": "网络服务"
+            },
+            {
+              "name": "INDUSTRY_YILIAO",
+              "number": "33",
+              "description": "医疗服务"
+            },
+            {
+              "name": "INDUSTRY_YOUXI",
+              "number": "34",
+              "description": "游戏"
+            },
+            {
+              "name": "INDUSTRY_YUNDONGYULE",
+              "number": "35",
+              "description": "运动休闲娱乐"
+            },
+            {
+              "name": "INDUSTRY_ZHAOSHANG",
+              "number": "36",
+              "description": "招商加盟"
+            },
+            {
+              "name": "INDUSTRY_XUESU",
+              "number": "37",
+              "description": "学术公管社会组织"
+            },
+            {
+              "name": "INDUSTRY_GUOJI",
+              "number": "38",
+              "description": "国际组织"
+            },
+            {
+              "name": "INDUSTRY_OTHER",
+              "number": "39",
+              "description": "其他"
+            }
+          ]
+        },
+        {
+          "name": "IsBlackWhiteEnum",
+          "longName": "IsBlackWhiteEnum",
+          "fullName": "keywords.IsBlackWhiteEnum",
+          "description": "是否为黑白名单",
+          "values": [
+            {
+              "name": "IS_BLACK_WHITE_NONE",
+              "number": "0",
+              "description": "白名单"
+            },
+            {
+              "name": "IS_BLACK_WHITE_WHITE",
+              "number": "1",
+              "description": "黑名单"
+            },
+            {
+              "name": "IS_BLACK_WHITE_BLACK",
+              "number": "2",
+              "description": "无"
+            }
+          ]
+        },
+        {
+          "name": "IsDeviceEnum",
+          "longName": "IsDeviceEnum",
+          "fullName": "keywords.IsDeviceEnum",
+          "description": "是否设备定向",
+          "values": [
+            {
+              "name": "IS_DEVICE_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "IS_DEVICE_YES",
+              "number": "1",
+              "description": "是"
+            },
+            {
+              "name": "IS_DEVICE_NO",
+              "number": "2",
+              "description": "否"
+            }
+          ]
+        },
+        {
+          "name": "IsMedia",
+          "longName": "IsMedia",
+          "fullName": "keywords.IsMedia",
+          "description": "是否设备定向",
+          "values": [
+            {
+              "name": "IS_MEDIA_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "IS_MEDIA_YES",
+              "number": "1",
+              "description": "是"
+            },
+            {
+              "name": "IS_MEDIA_NO",
+              "number": "2",
+              "description": "否"
+            }
+          ]
+        },
+        {
+          "name": "IsOrientedEnum",
+          "longName": "IsOrientedEnum",
+          "fullName": "keywords.IsOrientedEnum",
+          "description": "是否人群定向",
+          "values": [
+            {
+              "name": "IS_ORIENTED_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "IS_ORIENTED_YES",
+              "number": "1",
+              "description": "是"
+            },
+            {
+              "name": "IS_ORIENTED_NO",
+              "number": "2",
+              "description": "否"
+            }
+          ]
+        },
+        {
+          "name": "JumpTypeEnum",
+          "longName": "JumpTypeEnum",
+          "fullName": "keywords.JumpTypeEnum",
+          "description": "跳转类型",
+          "values": [
+            {
+              "name": "JUMP_TYPE_UNKNOWN",
+              "number": "0",
+              "description": "默认"
+            },
+            {
+              "name": "JUMP_TYPE_CLICK",
+              "number": "1",
+              "description": "点击"
+            },
+            {
+              "name": "JUMP_TYPE_DOWNLOAD",
+              "number": "2",
+              "description": "下载"
+            },
+            {
+              "name": "JUMP_TYPE_DEEP_LINK",
+              "number": "3",
+              "description": "DeepLink"
+            }
+          ]
+        },
+        {
+          "name": "JumpTypeRtb",
+          "longName": "JumpTypeRtb",
+          "fullName": "keywords.JumpTypeRtb",
+          "description": "竞价平台的跳转类型",
+          "values": [
+            {
+              "name": "JUMP_TYPE_RTB_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "JUMP_TYPE_RTB_CLICK",
+              "number": "1",
+              "description": "落地页推广"
+            },
+            {
+              "name": "JUMP_TYPE_RTB_DOWNLOAD",
+              "number": "2",
+              "description": "应用下载"
+            },
+            {
+              "name": "JUMP_TYPE_RTB_DEEPLINK",
+              "number": "3",
+              "description": "DeepLink"
+            }
+          ]
+        },
+        {
+          "name": "MPlayEnum",
+          "longName": "MPlayEnum",
+          "fullName": "keywords.MPlayEnum",
+          "description": "轮播方式",
+          "values": [
+            {
+              "name": "M_PLAY_UNKNOWN",
+              "number": "0",
+              "description": "无"
+            },
+            {
+              "name": "M_PLAY_DAY_ROLL",
+              "number": "1",
+              "description": "按天轮播"
+            },
+            {
+              "name": "M_PLAY_MATERIAL_ROLL",
+              "number": "2",
+              "description": "按素材轮播"
+            }
+          ]
+        },
+        {
+          "name": "MaterialTypeEnum",
+          "longName": "MaterialTypeEnum",
+          "fullName": "keywords.MaterialTypeEnum",
+          "description": "素材类型",
+          "values": [
+            {
+              "name": "MATERIAL_TYPE_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "MATERIAL_TYPE_STATIC",
+              "number": "1",
+              "description": "静态"
+            },
+            {
+              "name": "MATERIAL_TYPE_DYNAMICS",
+              "number": "2",
+              "description": "动态"
+            }
+          ]
+        },
+        {
+          "name": "MobileClass",
+          "longName": "MobileClass",
+          "fullName": "keywords.MobileClass",
+          "description": "",
+          "values": [
+            {
+              "name": "MOBILE_CLASS_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "MOBILE_CLASS_GAODUAN",
+              "number": "1",
+              "description": "高端"
+            },
+            {
+              "name": "MOBILE_CLASS_ZHONGGAODUAN",
+              "number": "2",
+              "description": "中高端"
+            },
+            {
+              "name": "MOBILE_CLASS_ZHONGDIDUAN",
+              "number": "3",
+              "description": "中低端"
+            },
+            {
+              "name": "MOBILE_CLASS_DIDUAN",
+              "number": "4",
+              "description": "低端"
+            }
+          ]
+        },
+        {
+          "name": "MonitorTypeEnum",
+          "longName": "MonitorTypeEnum",
+          "fullName": "keywords.MonitorTypeEnum",
+          "description": "监控类型",
+          "values": [
+            {
+              "name": "MONITOR_TYPE_UNKNOWN",
+              "number": "0",
+              "description": "无"
+            },
+            {
+              "name": "MONITOR_TYPE_MIAOZHEN",
+              "number": "1",
+              "description": "秒针"
+            }
+          ]
+        },
+        {
+          "name": "NetworkWayEnum",
+          "longName": "NetworkWayEnum",
+          "fullName": "keywords.NetworkWayEnum",
+          "description": "联网方式",
+          "values": [
+            {
+              "name": "NETWORK_WAY_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "NETWORK_WAY_WIFI",
+              "number": "1",
+              "description": "WIFI"
+            },
+            {
+              "name": "NETWORK_WAY_4G",
+              "number": "2",
+              "description": "4G"
+            },
+            {
+              "name": "NETWORK_WAY_3G",
+              "number": "3",
+              "description": "3G"
+            },
+            {
+              "name": "NETWORK_WAY_2G",
+              "number": "4",
+              "description": "2G"
+            }
+          ]
+        },
+        {
+          "name": "OperateTypeAll",
+          "longName": "OperateTypeAll",
+          "fullName": "keywords.OperateTypeAll",
+          "description": "搜索条件",
+          "values": [
+            {
+              "name": "OPERATE_TYPE_ALL",
+              "number": "0",
+              "description": "所有"
+            },
+            {
+              "name": "OPERATE_TYPE_GROUP",
+              "number": "1",
+              "description": "广告组"
+            },
+            {
+              "name": "OPERATE_TYPE_CAMPAIGN",
+              "number": "2",
+              "description": "广告计划"
+            },
+            {
+              "name": "OPERATE_TYPE_CREATIVE",
+              "number": "3",
+              "description": "广告创意"
+            },
+            {
+              "name": "OPERATE_TYPE_PROMOTION",
+              "number": "4",
+              "description": "推广管理"
+            },
+            {
+              "name": "OPERATE_TYPE_APPS",
+              "number": "5",
+              "description": "渠道包管理"
+            }
+          ]
+        },
+        {
+          "name": "OperateTypeEnum",
+          "longName": "OperateTypeEnum",
+          "fullName": "keywords.OperateTypeEnum",
+          "description": "",
+          "values": [
+            {
+              "name": "OPERATE_TYPE_ENUM_ALL",
+              "number": "0",
+              "description": "所有"
+            },
+            {
+              "name": "OPERATE_TYPE_ENUM_GROUP",
+              "number": "1",
+              "description": "广告组"
+            },
+            {
+              "name": "OPERATE_TYPE_ENUM_CAMPAIGN",
+              "number": "2",
+              "description": "广告计划"
+            },
+            {
+              "name": "OPERATE_TYPE_ENUM_CREATIVE",
+              "number": "3",
+              "description": "广告创意"
+            }
+          ]
+        },
+        {
+          "name": "OperatorEnum",
+          "longName": "OperatorEnum",
+          "fullName": "keywords.OperatorEnum",
+          "description": "运营商",
+          "values": [
+            {
+              "name": "OPERATOR_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "OPERATOR_UNICOM",
+              "number": "1",
+              "description": "中国联通"
+            },
+            {
+              "name": "OPERATOR_MOBILE",
+              "number": "2",
+              "description": "中国移动"
+            },
+            {
+              "name": "OPERATOR_TELECOM",
+              "number": "3",
+              "description": "中国电信"
+            }
+          ]
+        },
+        {
+          "name": "OrderType",
+          "longName": "OrderType",
+          "fullName": "keywords.OrderType",
+          "description": "",
+          "values": [
+            {
+              "name": "ORDER_TYPE_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "ORDER_TYPE_ZHITOU",
+              "number": "1",
+              "description": "直投"
+            },
+            {
+              "name": "ORDER_TYPE_BULIANG",
+              "number": "2",
+              "description": "补量"
+            }
+          ]
+        },
+        {
+          "name": "PaymentEnum",
+          "longName": "PaymentEnum",
+          "fullName": "keywords.PaymentEnum",
+          "description": "结算方式",
+          "values": [
+            {
+              "name": "PAYMENT_CPM",
+              "number": "0",
+              "description": "CPM"
+            },
+            {
+              "name": "PAYMENT_CPC",
+              "number": "1",
+              "description": "CPC"
+            },
+            {
+              "name": "PAYMENT_CPT",
+              "number": "2",
+              "description": "CPT"
+            }
+          ]
+        },
+        {
+          "name": "PlaceAttributeEnum",
+          "longName": "PlaceAttributeEnum",
+          "fullName": "keywords.PlaceAttributeEnum",
+          "description": "广告位属性",
+          "values": [
+            {
+              "name": "PLACE_ATTRIBUTE_UNKNOWN",
+              "number": "0",
+              "description": "默认"
+            },
+            {
+              "name": "PLACE_ATTRIBUTE_OPEN_SCREEN",
+              "number": "1",
+              "description": "开屏"
+            },
+            {
+              "name": "PLACE_ATTRIBUTE_INFORMATION_FLOW",
+              "number": "2",
+              "description": "信息流"
+            },
+            {
+              "name": "PLACE_ATTRIBUTE_BANNER",
+              "number": "3",
+              "description": "banner"
+            },
+            {
+              "name": "PLACE_ATTRIBUTE_TABLE_PLAQUE",
+              "number": "4",
+              "description": "插屏"
+            },
+            {
+              "name": "PLACE_ATTRIBUTE_EMBED",
+              "number": "5",
+              "description": "嵌入"
+            },
+            {
+              "name": "PLACE_ATTRIBUTE_FIG",
+              "number": "6",
+              "description": "图"
+            },
+            {
+              "name": "PLACE_ATTRIBUTE_SUSPENDED",
+              "number": "7",
+              "description": "悬浮广告"
+            },
+            {
+              "name": "PLACE_ATTRIBUTE_TEXT_CHAIN",
+              "number": "8",
+              "description": "文字链"
+            },
+            {
+              "name": "PLACE_ATTRIBUTE_ROW_BANNER",
+              "number": "9",
+              "description": "横幅广告"
+            },
+            {
+              "name": "PLACE_ATTRIBUTE_INSERT_PAGE",
+              "number": "10",
+              "description": "插页"
+            },
+            {
+              "name": "PLACE_ATTRIBUTE_MOTIVATIONAL_VIDEO",
+              "number": "11",
+              "description": "激励视频"
+            },
+            {
+              "name": "PLACE_ATTRIBUTE_DRAW",
+              "number": "12",
+              "description": "Draw流"
+            }
+          ]
+        },
+        {
+          "name": "PlaceStatusEnum",
+          "longName": "PlaceStatusEnum",
+          "fullName": "keywords.PlaceStatusEnum",
+          "description": "广告位状态",
+          "values": [
+            {
+              "name": "PLACE_STATUS_PAUSE",
+              "number": "0",
+              "description": "暂停"
+            },
+            {
+              "name": "PLACE_STATUS_NORMAL",
+              "number": "1",
+              "description": "正常"
+            },
+            {
+              "name": "PLACE_STATUS_DELETE",
+              "number": "2",
+              "description": "删除"
+            },
+            {
+              "name": "PLACE_STATUS_OUTLINE",
+              "number": "3",
+              "description": "临时下线"
+            },
+            {
+              "name": "PLACE_STATUS_GRAY",
+              "number": "4",
+              "description": "灰度发布"
+            }
+          ]
+        },
+        {
+          "name": "PlatformEnum",
+          "longName": "PlatformEnum",
+          "fullName": "keywords.PlatformEnum",
+          "description": "平台",
+          "values": [
+            {
+              "name": "PLATFORM_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "PLATFORM_ADMIN",
+              "number": "1",
+              "description": "管理员平台"
+            },
+            {
+              "name": "PLATFORM_RTB",
+              "number": "2",
+              "description": "竞价平台"
+            }
+          ]
+        },
+        {
+          "name": "PortTypeEnum",
+          "longName": "PortTypeEnum",
+          "fullName": "keywords.PortTypeEnum",
+          "description": "投放终端",
+          "values": [
+            {
+              "name": "PORT_TYPE_UNKNOWN",
+              "number": "0",
+              "description": "默认"
+            },
+            {
+              "name": "PORT_TYPE_IOS",
+              "number": "1",
+              "description": "Ios"
+            },
+            {
+              "name": "PORT_TYPE_ANDROID",
+              "number": "2",
+              "description": "Android"
+            },
+            {
+              "name": "PORT_TYPE_PC",
+              "number": "3",
+              "description": "PC"
+            },
+            {
+              "name": "PORT_TYPE_WAP",
+              "number": "4",
+              "description": "Wap"
+            },
+            {
+              "name": "PORT_TYPE_PC_CLIENT",
+              "number": "5",
+              "description": "PC客户端"
+            }
+          ]
+        },
+        {
+          "name": "PositionDetailEnum",
+          "longName": "PositionDetailEnum",
+          "fullName": "keywords.PositionDetailEnum",
+          "description": "位置详情",
+          "values": [
+            {
+              "name": "POSITION_DETAIL_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "POSITION_DETAIL_ONE",
+              "number": "1",
+              "description": "信息流小图一"
+            },
+            {
+              "name": "POSITION_DETAIL_TWO",
+              "number": "2",
+              "description": "信息流小图二"
+            },
+            {
+              "name": "POSITION_DETAIL_THREE",
+              "number": "3",
+              "description": "信息流小图三"
+            },
+            {
+              "name": "POSITION_DETAIL_FOUR",
+              "number": "4",
+              "description": "信息流小图四"
+            },
+            {
+              "name": "POSITION_DETAIL_FIVE",
+              "number": "5",
+              "description": "信息流小图五"
+            },
+            {
+              "name": "POSITION_DETAIL_SIX",
+              "number": "6",
+              "description": "信息流小图六"
+            },
+            {
+              "name": "POSITION_DETAIL_SEVEN",
+              "number": "7",
+              "description": "顶部信息流大图"
+            },
+            {
+              "name": "POSITION_DETAIL_EIGHT",
+              "number": "8",
+              "description": "底部信息流大图"
+            }
+          ]
+        },
+        {
+          "name": "PositionEnum",
+          "longName": "PositionEnum",
+          "fullName": "keywords.PositionEnum",
+          "description": "位置",
+          "values": [
+            {
+              "name": "POSITION_TYPE_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "POSITION_TYPE_ONE",
+              "number": "1",
+              "description": "位置1"
+            },
+            {
+              "name": "POSITION_TYPE_TWO",
+              "number": "2",
+              "description": "位置2"
+            },
+            {
+              "name": "POSITION_TYPE_THREE",
+              "number": "3",
+              "description": "位置3"
+            },
+            {
+              "name": "POSITION_TYPE_FOUR",
+              "number": "4",
+              "description": "位置4"
+            },
+            {
+              "name": "POSITION_TYPE_FIVE",
+              "number": "5",
+              "description": "位置5"
+            },
+            {
+              "name": "POSITION_TYPE_SIX",
+              "number": "6",
+              "description": "顶部刷新1"
+            },
+            {
+              "name": "POSITION_TYPE_SEVEN",
+              "number": "7",
+              "description": "顶部刷新2"
+            }
+          ]
+        },
+        {
+          "name": "PriorityEnum",
+          "longName": "PriorityEnum",
+          "fullName": "keywords.PriorityEnum",
+          "description": "优先级",
+          "values": [
+            {
+              "name": "PRIORITY_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "PRIORITY_PREVIEW_ADS",
+              "number": "40",
+              "description": "预览广告"
+            },
+            {
+              "name": "PRIORITY_BRAND_ADVERTISEMENT",
+              "number": "30",
+              "description": "品牌广告"
+            },
+            {
+              "name": "PRIORITY_INTRODUCE_ADS",
+              "number": "10",
+              "description": "内推广告"
+            }
+          ]
+        },
+        {
+          "name": "ProductIdEnum",
+          "longName": "ProductIdEnum",
+          "fullName": "keywords.ProductIdEnum",
+          "description": "广告类型",
+          "values": [
+            {
+              "name": "PRODUCT_ID_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "PRODUCT_ID_FALLBACK_ADS",
+              "number": "5",
+              "description": "打底广告"
+            },
+            {
+              "name": "PRODUCT_ID_INTRODUCE_ADS",
+              "number": "10",
+              "description": "内推广告"
+            },
+            {
+              "name": "PRODUCT_ID_DIRECT_BIDDING",
+              "number": "20",
+              "description": "竞价直客"
+            },
+            {
+              "name": "PRODUCT_ID_BRAND_ADVERTISEMENT",
+              "number": "30",
+              "description": "品牌广告"
+            },
+            {
+              "name": "PRODUCT_ID_PREVIEW_ADS",
+              "number": "40",
+              "description": "预览广告"
+            },
+            {
+              "name": "PRODUCT_ID_DIRECT_GUEST_ALLIANCE",
+              "number": "50",
+              "description": "直客联盟"
+            },
+            {
+              "name": "PRODUCT_ID_THIRD_PARTY_ALLIANCE",
+              "number": "60",
+              "description": "第三方联盟"
+            }
+          ]
+        },
+        {
+          "name": "ProvincesEnum",
+          "longName": "ProvincesEnum",
+          "fullName": "keywords.ProvincesEnum",
+          "description": "省份",
+          "values": [
+            {
+              "name": "PROVINCES_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "PROVINCES_BEIJING",
+              "number": "1",
+              "description": "北京市"
+            },
+            {
+              "name": "PROVINCES_SHANGHAI",
+              "number": "2",
+              "description": "上海市"
+            },
+            {
+              "name": "PROVINCES_TIANJIN",
+              "number": "3",
+              "description": "天津市"
+            },
+            {
+              "name": "PROVINCES_CHONGQING",
+              "number": "4",
+              "description": "重庆市"
+            },
+            {
+              "name": "PROVINCES_ANHUI",
+              "number": "5",
+              "description": "安徽省"
+            },
+            {
+              "name": "PROVINCES_FUJIAN",
+              "number": "6",
+              "description": "福建省"
+            },
+            {
+              "name": "PROVINCES_GANSU",
+              "number": "7",
+              "description": "甘肃省"
+            },
+            {
+              "name": "PROVINCES_GUANGDONG",
+              "number": "8",
+              "description": "广东省"
+            },
+            {
+              "name": "PROVINCES_GUANGXI",
+              "number": "9",
+              "description": "广西省"
+            },
+            {
+              "name": "PROVINCES_GUIZHOU",
+              "number": "10",
+              "description": "贵州省"
+            },
+            {
+              "name": "PROVINCES_HEBEI",
+              "number": "11",
+              "description": "河北省"
+            },
+            {
+              "name": "PROVINCES_HENAN",
+              "number": "12",
+              "description": "河南省"
+            },
+            {
+              "name": "PROVINCES_HEILONGJIANG",
+              "number": "13",
+              "description": "黑龙江省"
+            },
+            {
+              "name": "PROVINCES_HUBEI",
+              "number": "14",
+              "description": "湖北省"
+            },
+            {
+              "name": "PROVINCES_HUNAN",
+              "number": "15",
+              "description": "湖南省"
+            },
+            {
+              "name": "PROVINCES_JILIN",
+              "number": "16",
+              "description": "吉林省"
+            },
+            {
+              "name": "PROVINCES_JIANGSU",
+              "number": "17",
+              "description": "江苏省"
+            },
+            {
+              "name": "PROVINCES_JIANGXI",
+              "number": "18",
+              "description": "江西省"
+            },
+            {
+              "name": "PROVINCES_LIAONING",
+              "number": "19",
+              "description": "辽宁省"
+            },
+            {
+              "name": "PROVINCES_NEIMENGGU",
+              "number": "20",
+              "description": "内蒙古"
+            },
+            {
+              "name": "PROVINCES_NINGXIA",
+              "number": "21",
+              "description": "宁夏"
+            },
+            {
+              "name": "PROVINCES_QINGHAI",
+              "number": "22",
+              "description": "青海省"
+            },
+            {
+              "name": "PROVINCES_SHANDONG",
+              "number": "23",
+              "description": "山东省"
+            },
+            {
+              "name": "PROVINCES_SHANXI",
+              "number": "24",
+              "description": "山西省"
+            },
+            {
+              "name": "PROVINCES_SHANXI_2",
+              "number": "25",
+              "description": "陕西省"
+            },
+            {
+              "name": "PROVINCES_SICHUAN",
+              "number": "26",
+              "description": "四川省"
+            },
+            {
+              "name": "PROVINCES_XIZANG",
+              "number": "27",
+              "description": "西藏"
+            },
+            {
+              "name": "PROVINCES_XINJIANG",
+              "number": "28",
+              "description": "新疆"
+            },
+            {
+              "name": "PROVINCES_YUNNAN",
+              "number": "29",
+              "description": "云南省"
+            },
+            {
+              "name": "PROVINCES_ZHEJIANG",
+              "number": "30",
+              "description": "浙江省"
+            },
+            {
+              "name": "PROVINCES_HAINAN",
+              "number": "31",
+              "description": "海南省"
+            },
+            {
+              "name": "PROVINCES_XIANGGANG",
+              "number": "32",
+              "description": "香港"
+            },
+            {
+              "name": "PROVINCES_TAIWAN",
+              "number": "33",
+              "description": "台湾"
+            },
+            {
+              "name": "PROVINCES_AOMEN",
+              "number": "34",
+              "description": "澳门"
+            }
+          ]
+        },
+        {
+          "name": "PubChannel",
+          "longName": "PubChannel",
+          "fullName": "keywords.PubChannel",
+          "description": "",
+          "values": [
+            {
+              "name": "PUB_CHANNEL_UNKNOWN",
+              "number": "0",
+              "description": ""
+            },
+            {
+              "name": "PUB_CHANNEL_DONEWS",
+              "number": "1",
+              "description": ""
+            },
+            {
+              "name": "PUB_CHANNEL_YINLI_PC",
+              "number": "2",
+              "description": ""
+            },
+            {
+              "name": "PUB_CHANNEL_178_PC",
+              "number": "3",
+              "description": ""
+            },
+            {
+              "name": "PUB_CHANNEL_A9VG_PC",
+              "number": "4",
+              "description": ""
+            },
+            {
+              "name": "PUB_CHANNEL_NGA_PC",
+              "number": "5",
+              "description": ""
+            },
+            {
+              "name": "PUB_CHANNEL_TG_BUS_PC",
+              "number": "6",
+              "description": ""
+            },
+            {
+              "name": "PUB_CHANNEL_PM_TG_BUS_PC",
+              "number": "7",
+              "description": ""
+            },
+            {
+              "name": "PUB_CHANNEL_178_WAP",
+              "number": "8",
+              "description": ""
+            },
+            {
+              "name": "PUB_CHANNEL_TG_BUS_WAP",
+              "number": "9",
+              "description": ""
+            },
+            {
+              "name": "PUB_CHANNEL_PM_TG_BUS_WAP",
+              "number": "10",
+              "description": ""
+            },
+            {
+              "name": "PUB_CHANNEL_A9VG_IOS_APP",
+              "number": "11",
+              "description": ""
+            },
+            {
+              "name": "PUB_CHANNEL_NGA_IOS_APP",
+              "number": "12",
+              "description": ""
+            },
+            {
+              "name": "PUB_CHANNEL_A9VG_ANDROID_APP",
+              "number": "13",
+              "description": ""
+            },
+            {
+              "name": "PUB_CHANNEL_NGA_ANDROID_APP",
+              "number": "14",
+              "description": ""
+            },
+            {
+              "name": "PUB_CHANNEL_NGA_WAP",
+              "number": "15",
+              "description": ""
+            },
+            {
+              "name": "PUB_CHANNEL_A9VG_WAP",
+              "number": "16",
+              "description": ""
+            },
+            {
+              "name": "PUB_CHANNEL_178_ANDROID_APP",
+              "number": "17",
+              "description": ""
+            },
+            {
+              "name": "PUB_CHANNEL_TG_BUS_ANDROID_APP",
+              "number": "18",
+              "description": ""
+            },
+            {
+              "name": "PUB_CHANNEL_178_IOS_APP",
+              "number": "19",
+              "description": ""
+            },
+            {
+              "name": "PUB_CHANNEL_TG_BUS_IOS_APP",
+              "number": "20",
+              "description": ""
+            },
+            {
+              "name": "PUB_CHANNEL_DAJIAO_CLIENT",
+              "number": "21",
+              "description": ""
+            },
+            {
+              "name": "PUB_CHANNEL_YINLI_WAP",
+              "number": "22",
+              "description": ""
+            }
+          ]
+        },
+        {
+          "name": "QuaType",
+          "longName": "QuaType",
+          "fullName": "keywords.QuaType",
+          "description": "营业执照",
+          "values": [
+            {
+              "name": "QUA_TYPE_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "QUA_TYPE_LICENSE",
+              "number": "1",
+              "description": "营业执照"
+            },
+            {
+              "name": "QUA_TYPE_ICP",
+              "number": "2",
+              "description": "ICP备案截图"
+            }
+          ]
+        },
+        {
+          "name": "RebateSelect",
+          "longName": "RebateSelect",
+          "fullName": "keywords.RebateSelect",
+          "description": "",
+          "values": [
+            {
+              "name": "REBATE_SELECT_ALL",
+              "number": "0",
+              "description": "查看全部"
+            },
+            {
+              "name": "REBATE_SELECT_RTB_AD_USER",
+              "number": "2",
+              "description": "竞价广告主"
+            },
+            {
+              "name": "REBATE_SELECT_RTB_KA",
+              "number": "3",
+              "description": "竞价-KA"
+            }
+          ]
+        },
+        {
+          "name": "RebateType",
+          "longName": "RebateType",
+          "fullName": "keywords.RebateType",
+          "description": "充值类型",
+          "values": [
+            {
+              "name": "REBATE_TYPE_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "REBATE_TYPE_XIANJIN",
+              "number": "1",
+              "description": "现金金额"
+            },
+            {
+              "name": "REBATE_TYPE_FANHUO",
+              "number": "2",
+              "description": "返货金额"
+            }
+          ]
+        },
+        {
+          "name": "RefundType",
+          "longName": "RefundType",
+          "fullName": "keywords.RefundType",
+          "description": "退款类型",
+          "values": [
+            {
+              "name": "REFUND_TYPE_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "REFUND_TYPE_XIANJIN",
+              "number": "1",
+              "description": "退款现金金额"
+            },
+            {
+              "name": "REFUND_TYPE_FANHUO",
+              "number": "2",
+              "description": "退款返货金额"
+            }
+          ]
+        },
+        {
+          "name": "RenderModeEnum",
+          "longName": "RenderModeEnum",
+          "fullName": "keywords.RenderModeEnum",
+          "description": "渲染方式",
+          "values": [
+            {
+              "name": "RENDER_MODE_UNKNOWN",
+              "number": "0",
+              "description": "无"
+            },
+            {
+              "name": "RENDER_MODE_SELF",
+              "number": "1",
+              "description": "自渲染"
+            },
+            {
+              "name": "RENDER_MODE_TEMPLATE",
+              "number": "2",
+              "description": "模板渲染"
+            }
+          ]
+        },
+        {
+          "name": "SType",
+          "longName": "SType",
+          "fullName": "keywords.SType",
+          "description": "",
+          "values": [
+            {
+              "name": "S_TYPE_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "S_TYPE_NORMAL",
+              "number": "1",
+              "description": "正常"
+            },
+            {
+              "name": "S_TYPE_FEED_TYPE",
+              "number": "2",
+              "description": "信息流广告"
+            }
+          ]
+        },
+        {
+          "name": "SexEnum",
+          "longName": "SexEnum",
+          "fullName": "keywords.SexEnum",
+          "description": "性别",
+          "values": [
+            {
+              "name": "SEX_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "SEX_MEN",
+              "number": "101002002",
+              "description": "男"
+            },
+            {
+              "name": "SEX_WOMEN",
+              "number": "101002001",
+              "description": "女"
+            }
+          ]
+        },
+        {
+          "name": "StagesLifeEnum",
+          "longName": "StagesLifeEnum",
+          "fullName": "keywords.StagesLifeEnum",
+          "description": "生活阶段",
+          "values": [
+            {
+              "name": "STAGES_LIFE_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "STAGES_LIFE_XUESHENG",
+              "number": "101003001",
+              "description": "学生时期"
+            },
+            {
+              "name": "STAGES_LIFE_QIUZHI",
+              "number": "101003002",
+              "description": "求职时期"
+            },
+            {
+              "name": "STAGES_LIFE_SHIHUN",
+              "number": "101003003",
+              "description": "适婚时期"
+            },
+            {
+              "name": "STAGES_LIFE_YUNCHAN",
+              "number": "101003004",
+              "description": "孕产时期"
+            },
+            {
+              "name": "STAGES_LIFE_YUER",
+              "number": "101003005",
+              "description": "育儿时期"
+            }
+          ]
+        },
+        {
+          "name": "SuperAdminPermissions",
+          "longName": "SuperAdminPermissions",
+          "fullName": "keywords.SuperAdminPermissions",
+          "description": "",
+          "values": [
+            {
+              "name": "SUPER_ADMIN_PERMISSIONS_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "SUPER_ADMIN_PERMISSIONS_HOME",
+              "number": "9",
+              "description": "首页面板"
+            },
+            {
+              "name": "SUPER_ADMIN_PERMISSIONS_AD_USER",
+              "number": "1",
+              "description": "广告主管理"
+            },
+            {
+              "name": "SUPER_ADMIN_PERMISSIONS_CAMPAIGN",
+              "number": "2",
+              "description": "计划管理"
+            },
+            {
+              "name": "SUPER_ADMIN_PERMISSIONS_AD",
+              "number": "3",
+              "description": "广告管理"
+            },
+            {
+              "name": "SUPER_ADMIN_PERMISSIONS_DATA",
+              "number": "4",
+              "description": "数据报表"
+            },
+            {
+              "name": "SUPER_ADMIN_PERMISSIONS_FINANCE",
+              "number": "5",
+              "description": "财务管理"
+            },
+            {
+              "name": "SUPER_ADMIN_PERMISSIONS_CHILD",
+              "number": "6",
+              "description": "子账户管理"
+            },
+            {
+              "name": "SUPER_ADMIN_PERMISSIONS_LOG",
+              "number": "8",
+              "description": "操作日志"
+            },
+            {
+              "name": "SUPER_ADMIN_PERMISSIONS_AUDIENCE",
+              "number": "10",
+              "description": "受众分析"
+            },
+            {
+              "name": "SUPER_ADMIN_PERMISSIONS_TAILOR",
+              "number": "11",
+              "description": "广告裁切预览"
+            },
+            {
+              "name": "SUPER_ADMIN_PERMISSIONS_FALLBACK",
+              "number": "12",
+              "description": "打底广告"
+            }
+          ]
+        },
+        {
+          "name": "UsageModeEnum",
+          "longName": "UsageModeEnum",
+          "fullName": "keywords.UsageModeEnum",
+          "description": "usage_mode",
+          "values": [
+            {
+              "name": "USAGE_MODE_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "USAGE_MODE_MAIN_USAGE_MODE",
+              "number": "1",
+              "description": "主素材"
+            },
+            {
+              "name": "USAGE_MODE_COVER_USAGE_MODE",
+              "number": "2",
+              "description": "封面"
+            },
+            {
+              "name": "USAGE_MODE_ICON_USAGE_MODE",
+              "number": "3",
+              "description": "icon"
+            }
+          ]
+        },
+        {
+          "name": "VerifyStatus",
+          "longName": "VerifyStatus",
+          "fullName": "keywords.VerifyStatus",
+          "description": "审核状态",
+          "values": [
+            {
+              "name": "VERIFY_STATUS_PENDING",
+              "number": "0",
+              "description": "待审核"
+            },
+            {
+              "name": "VERIFY_STATUS_PASS",
+              "number": "1",
+              "description": "已通过"
+            },
+            {
+              "name": "VERIFY_STATUS_REFUSED",
+              "number": "2",
+              "description": "已拒绝"
+            }
+          ]
+        },
+        {
+          "name": "VideoChannelEnum",
+          "longName": "VideoChannelEnum",
+          "fullName": "keywords.VideoChannelEnum",
+          "description": "视频信息流",
+          "values": [
+            {
+              "name": "VIDEO_CHANNEL_UNKNOWN",
+              "number": "0",
+              "description": "未知"
+            },
+            {
+              "name": "VIDEO_CHANNEL_TUIJIAN",
+              "number": "32",
+              "description": "推荐"
+            },
+            {
+              "name": "VIDEO_CHANNEL_YINYUE",
+              "number": "33",
+              "description": "音乐"
+            },
+            {
+              "name": "VIDEO_CHANNEL_GAOXIAO",
+              "number": "34",
+              "description": "搞笑"
+            },
+            {
+              "name": "VIDEO_CHANNEL_SHEHIU",
+              "number": "35",
+              "description": "社会"
+            },
+            {
+              "name": "VIDEO_CHANNEL_SHENGHUO",
+              "number": "36",
+              "description": "生活"
+            },
+            {
+              "name": "VIDEO_CHANNEL_YINGSHI",
+              "number": "37",
+              "description": "影视"
+            },
+            {
+              "name": "VIDEO_CHANNEL_YULE",
+              "number": "38",
+              "description": "娱乐"
+            },
+            {
+              "name": "VIDEO_CHANNEL_DAIMENG",
+              "number": "39",
+              "description": "呆萌"
+            },
+            {
+              "name": "VIDEO_CHANNEL_YOUXI",
+              "number": "40",
+              "description": "游戏"
+            },
+            {
+              "name": "VIDEO_CHANNEL_YUANCHUANG",
+              "number": "41",
+              "description": "原创"
+            },
+            {
+              "name": "VIDEO_CHANNEL_XIAOPIN",
+              "number": "42",
+              "description": "小品"
+            }
+          ]
+        }
+      ],
+      "extensions": [],
+      "messages": [],
+      "services": []
+    }
+  ],
+  "scalarValueTypes": [
+    {
+      "protoType": "double",
+      "notes": "",
+      "cppType": "double",
+      "csType": "double",
+      "goType": "float64",
+      "javaType": "double",
+      "phpType": "float",
+      "pythonType": "float",
+      "rubyType": "Float"
+    },
+    {
+      "protoType": "float",
+      "notes": "",
+      "cppType": "float",
+      "csType": "float",
+      "goType": "float32",
+      "javaType": "float",
+      "phpType": "float",
+      "pythonType": "float",
+      "rubyType": "Float"
+    },
+    {
+      "protoType": "int32",
+      "notes": "Uses variable-length encoding. Inefficient for encoding negative numbers – if your field is likely to have negative values, use sint32 instead.",
+      "cppType": "int32",
+      "csType": "int",
+      "goType": "int32",
+      "javaType": "int",
+      "phpType": "integer",
+      "pythonType": "int",
+      "rubyType": "Bignum or Fixnum (as required)"
+    },
+    {
+      "protoType": "int64",
+      "notes": "Uses variable-length encoding. Inefficient for encoding negative numbers – if your field is likely to have negative values, use sint64 instead.",
+      "cppType": "int64",
+      "csType": "long",
+      "goType": "int64",
+      "javaType": "long",
+      "phpType": "integer/string",
+      "pythonType": "int/long",
+      "rubyType": "Bignum"
+    },
+    {
+      "protoType": "uint32",
+      "notes": "Uses variable-length encoding.",
+      "cppType": "uint32",
+      "csType": "uint",
+      "goType": "uint32",
+      "javaType": "int",
+      "phpType": "integer",
+      "pythonType": "int/long",
+      "rubyType": "Bignum or Fixnum (as required)"
+    },
+    {
+      "protoType": "uint64",
+      "notes": "Uses variable-length encoding.",
+      "cppType": "uint64",
+      "csType": "ulong",
+      "goType": "uint64",
+      "javaType": "long",
+      "phpType": "integer/string",
+      "pythonType": "int/long",
+      "rubyType": "Bignum or Fixnum (as required)"
+    },
+    {
+      "protoType": "sint32",
+      "notes": "Uses variable-length encoding. Signed int value. These more efficiently encode negative numbers than regular int32s.",
+      "cppType": "int32",
+      "csType": "int",
+      "goType": "int32",
+      "javaType": "int",
+      "phpType": "integer",
+      "pythonType": "int",
+      "rubyType": "Bignum or Fixnum (as required)"
+    },
+    {
+      "protoType": "sint64",
+      "notes": "Uses variable-length encoding. Signed int value. These more efficiently encode negative numbers than regular int64s.",
+      "cppType": "int64",
+      "csType": "long",
+      "goType": "int64",
+      "javaType": "long",
+      "phpType": "integer/string",
+      "pythonType": "int/long",
+      "rubyType": "Bignum"
+    },
+    {
+      "protoType": "fixed32",
+      "notes": "Always four bytes. More efficient than uint32 if values are often greater than 2^28.",
+      "cppType": "uint32",
+      "csType": "uint",
+      "goType": "uint32",
+      "javaType": "int",
+      "phpType": "integer",
+      "pythonType": "int",
+      "rubyType": "Bignum or Fixnum (as required)"
+    },
+    {
+      "protoType": "fixed64",
+      "notes": "Always eight bytes. More efficient than uint64 if values are often greater than 2^56.",
+      "cppType": "uint64",
+      "csType": "ulong",
+      "goType": "uint64",
+      "javaType": "long",
+      "phpType": "integer/string",
+      "pythonType": "int/long",
+      "rubyType": "Bignum"
+    },
+    {
+      "protoType": "sfixed32",
+      "notes": "Always four bytes.",
+      "cppType": "int32",
+      "csType": "int",
+      "goType": "int32",
+      "javaType": "int",
+      "phpType": "integer",
+      "pythonType": "int",
+      "rubyType": "Bignum or Fixnum (as required)"
+    },
+    {
+      "protoType": "sfixed64",
+      "notes": "Always eight bytes.",
+      "cppType": "int64",
+      "csType": "long",
+      "goType": "int64",
+      "javaType": "long",
+      "phpType": "integer/string",
+      "pythonType": "int/long",
+      "rubyType": "Bignum"
+    },
+    {
+      "protoType": "bool",
+      "notes": "",
+      "cppType": "bool",
+      "csType": "bool",
+      "goType": "bool",
+      "javaType": "boolean",
+      "phpType": "boolean",
+      "pythonType": "boolean",
+      "rubyType": "TrueClass/FalseClass"
+    },
+    {
+      "protoType": "string",
+      "notes": "A string must always contain UTF-8 encoded or 7-bit ASCII text.",
+      "cppType": "string",
+      "csType": "string",
+      "goType": "string",
+      "javaType": "String",
+      "phpType": "string",
+      "pythonType": "str/unicode",
+      "rubyType": "String (UTF-8)"
+    },
+    {
+      "protoType": "bytes",
+      "notes": "May contain any arbitrary sequence of bytes.",
+      "cppType": "string",
+      "csType": "ByteString",
+      "goType": "[]byte",
+      "javaType": "ByteString",
+      "phpType": "string",
+      "pythonType": "str",
+      "rubyType": "String (ASCII-8BIT)"
+    }
+  ]
+}
