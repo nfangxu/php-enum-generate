@@ -1,4 +1,4 @@
-package main
+package php_enum_generate
 
 import (
     "encoding/json"
